@@ -37,19 +37,19 @@ class Customer(models.Model):
     company = models.ForeignKey(
         Company,
         on_delete=models.PROTECT,
-        related_name=''
+        related_name='companies'
     )
     city = models.ForeignKey(
         City,
         on_delete=models.PROTECT,
-        related_name=''
+        related_name='cities'
     )
     title = models.ForeignKey(
         Title,
         on_delete=models.PROTECT,
         null=True,
         blank=True,
-        related_name=''
+        related_name='titles'
     )
     def __str__(self):
         return self.first_name + ' ' + self.last_name
