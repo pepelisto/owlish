@@ -31,7 +31,8 @@ class Customer(models.Model):
     email = models.EmailField(max_length=40)
     gender_types = (
         ('Male', 'Male'),
-        ('Female', 'Female'))
+        ('Female', 'Female')
+    )
     gender = models.CharField(
         max_length=10,
         help_text='Cuenta',
