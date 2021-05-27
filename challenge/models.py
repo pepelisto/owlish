@@ -6,18 +6,21 @@ class City(models.Model):
     state = models.CharField(max_length=3)
     latitude = models.DecimalField(max_digits=9, decimal_places=6)
     longitude = models.DecimalField(max_digits=9, decimal_places=6)
+
     def __str__(self):
         return self.city_name + ' ' + self.state
 
 
 class Company(models.Model):
     company_name = models.CharField(max_length=40)
+
     def __str__(self):
         return self.company_name
 
 
 class Title(models.Model):
     title_name = models.CharField(max_length=40)
+
     def __str__(self):
         return self.title_name
 
@@ -51,5 +54,6 @@ class Customer(models.Model):
         blank=True,
         related_name='titles'
     )
+
     def __str__(self):
         return self.first_name + ' ' + self.last_name
