@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from challenge import views
+from challenge.views import CustomersList
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('customers_list/', CustomersList.as_view(), name='customers_list'),
+    path('customer_detail/<int:pk>/', views.customer_detail,
+         name='customer_detail'),
 ]

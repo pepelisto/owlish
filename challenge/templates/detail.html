@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CustomersList</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Customer id</th>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Email</th>
+                <th>Gender</th>
+                <th>Company</th>
+                <th>City</th>
+                <th>City lat</th>
+                <th>City lng</th>
+                <th>Title</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ customer.pk }}</td>
+                <td>{{ customer.first_name }}</td>
+                <td>{{ customer.last_name }}</td>
+                <td>{{ customer.email }}</td>
+                <td>{{ customer.gender }}</td>
+                <td>{{ customer.company }}</td>
+                <td>{{ customer.city }}</td>
+                <td>{{ customer.city.latitude }}</td>
+                <td>{{ customer.city.longitude }}</td>
+                <td>{{ customer.title }}</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
