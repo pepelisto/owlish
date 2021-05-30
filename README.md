@@ -27,7 +27,7 @@ There is a requierments.txt file on the repository so following the instructions
 
 ## Get the app up and running
 
-Assuming you have python, pip already installed in your local machine we are going to create a virtual enviornment to run the project, so first open the Command Prompt.
+Assuming you have python and pip already installed in your local machine we are going to create a virtual enviornment to run the project, so first open the Command Prompt.
 
 If you don't have virtual enviorement already installed then run 
 
