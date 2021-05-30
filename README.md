@@ -33,7 +33,8 @@ So now that the repository its in your local virtual enviornment, you need to in
 
 Ok, so now, a very important step in the project directory we need to create a .env file (with no extension) windows does not allow you to create files with no extensions but you can do this in an IDE, in Pycharm right click on the project folder, new file and set its name to .env, this might be a bit tricky but very important because here we will set al the sensitive variables related to the project taht we dont want no body to have acces to, like Secret Key, database access codes and in this case Google Geocoding API KEY. like shown in the image bellow
 
-         ![image](https://user-images.githubusercontent.com/54082379/120117405-6a0b9880-c163-11eb-88eb-864602d647a2.png)
+![image](https://user-images.githubusercontent.com/54082379/120118144-7a257700-c167-11eb-9bb1-a3cc39d1514f.png)
+
 
 In there you can set the variables:
 
@@ -77,8 +78,10 @@ we will get:
 
 Now we can go to the url http://127.0.0.1:8000/customers_list/ to get the list with all the customers in our database(see image bellow)
 
+![image](https://user-images.githubusercontent.com/54082379/120118155-8c9fb080-c167-11eb-9b3e-edab5cf8de28.png)
 
-     ![image](https://user-images.githubusercontent.com/54082379/120118091-21ee7500-c167-11eb-81b9-8f39786ec03f.png)
+
+
 
 
 
