@@ -35,7 +35,6 @@ Ok, so now, a very important step in the project directory we need to create a .
 
 ![image](https://user-images.githubusercontent.com/54082379/120118144-7a257700-c167-11eb-9bb1-a3cc39d1514f.png)
 
-
 In there you can set the variables:
 
 API_KEY = Here you use your own Google Geocode API KEY
@@ -80,7 +79,17 @@ Now we can go to the url http://127.0.0.1:8000/customers_list/ to get the list w
 
 ![image](https://user-images.githubusercontent.com/54082379/120118155-8c9fb080-c167-11eb-9b3e-edab5cf8de28.png)
 
+Clicking in any name we can have that customer details, or alternatively going to the url http://127.0.0.1:8000/customer_detail/Customer_ID_here/ and get
 
+![image](https://user-images.githubusercontent.com/54082379/120118242-e6a07600-c167-11eb-8b61-26f848721d63.png)
+
+### Runing tests
+
+To run the automated tests, simple type in the command:
+
+(venv) C:\Users\MASTER\owlish>python manage.py test
+
+This will test automatically the URL responses status codes and if the views given a url are the right views.
 
 
 
