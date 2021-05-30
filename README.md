@@ -1,4 +1,5 @@
 
+### Get the app up and running
 
 Assuming you have python, pip already installed in your local machine we are going to create a virtual enviornment to run the project, so first open the Command Prompt.
 
@@ -31,7 +32,18 @@ So now that the repository its in your local virtual enviornment, you need to in
 
 Ok, so now, a very important step in the project directory we need to create a .env file (with no extension) windows does not allow you to create files with no extensions but you can do this in an IDE, in Pycharm right click on the project folder, new file and set its name to .env, this might be a bit tricky but very important because here we will set al the sensitive variables related to the project taht we dont want no body to have acces to, like Secret Key, database access codes and in this case Google Geocoding API KEY. like shown in the image bellow
 
-               ![image](https://user-images.githubusercontent.com/54082379/120117386-519b7e00-c163-11eb-9186-cada969b0b71.png)
+         ![image](https://user-images.githubusercontent.com/54082379/120117405-6a0b9880-c163-11eb-88eb-864602d647a2.png)
+
+In there you can set the variables:
+API_KEY = Here you use your own Google Geocode API KEY
+SECRET_KEY = 'django-insecure-oz_z@if#ikfth92ruuhp^-(jasj*qn@3dt=9ruk1z9bk^hi-o('
+
+Almost there, now only run the following commmand to set up a SQLite in our local environment to have our program up-and-running in our local environment
+
+    $(venv) C:\Users\MASTER\owlish>python manage.py migrate
+
+
+
 
 
 
