@@ -104,7 +104,7 @@ To run the automated tests, simple type in the command:
 
 (venv) C:\Users\MASTER\owlish>python manage.py test
 
-This will test automatically the URL responses status codes and if the views given a url are the right views.
+This will test automatically the URL's HTTP responses status codes and if the views that django returns are the correct views for the requested url's.
 
 
 
