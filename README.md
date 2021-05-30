@@ -29,5 +29,10 @@ So now that the repository its in your local virtual enviornment, you need to in
 
     $(venv) C:\Users\MASTER\owlish>pip install -r requirements.txt
 
+Ok, so now, a very important step in the project directory we need to create a .env file (with no extension) windows does not allow you to create files with no extensions but you can do this in an IDE, in Pycharm right click on the project folder, new file and set its name to .env, this might be a bit tricky but very important because here we will set al the sensitive variables related to the project taht we dont want no body to have acces to, like Secret Key, database access codes and in this case Google Geocoding API KEY. like shown in the image bellow
+
+![image](https://user-images.githubusercontent.com/54082379/120117386-519b7e00-c163-11eb-9186-cada969b0b71.png)
+
+
 
     
