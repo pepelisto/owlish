@@ -1,4 +1,5 @@
 # Oowlish Django Challenge
+## Description
 
 The challenge consist on creating a simple REST API that provides information about customers, design and create a database models, develope a single comand to populate the database from a given csv file and get coordinates for the cities of each customer with Google maps API.
 
