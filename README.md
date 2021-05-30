@@ -35,6 +35,7 @@ Ok, so now, a very important step in the project directory we need to create a .
          ![image](https://user-images.githubusercontent.com/54082379/120117405-6a0b9880-c163-11eb-88eb-864602d647a2.png)
 
 In there you can set the variables:
+
 API_KEY = Here you use your own Google Geocode API KEY
 SECRET_KEY = 'django-insecure-oz_z@if#ikfth92ruuhp^-(jasj*qn@3dt=9ruk1z9bk^hi-o('
 
