@@ -31,20 +31,20 @@ Now you need to clone the git repository to your local machine with the followin
 
 Now that we had a new directory atomatically created with the name of the project, in this case "owlish", we type in the command
 
-    $ C:\Users\MASTER>cd owlish
+     C:\Users\MASTER>cd owlish
 
 Now that we are in the project directory we create a virtual environment  for it with the following command
 
-    $ C:\Users\MASTER\owlish>virtualenv venv
+     C:\Users\MASTER\owlish>virtualenv venv
 
 So the virtual environment  its created, now we activate it with:
 
-    $ C:\Users\MASTER\owlish>venv\Scripts\activate
+     C:\Users\MASTER\owlish>venv\Scripts\activate
 
 You can see it worked because of the "(venv)" ate the beginning  of the line.
 So now that the repository its in your local virtual environment, you need to install the requirements in order to properly run the program with the following command
 
-    $(venv) C:\Users\MASTER\owlish>pip install -r requirements.txt
+     (venv) C:\Users\MASTER\owlish>pip install -r requirements.txt
 
 Ok, so now, a very important step in the project directory we need to create a .env file (with no extension), windows does not allow you to create files with no extensions but you can do this in an IDE, in Pycharm right click on the project folder, new file and set its name to .env, this might be a bit tricky but very important because here we will set al the sensitive variables related to the project that we don't want nobody to have access to, like Secret Key, database access codes and in this case Google Geocoding API KEY. like shown in the image below
 
@@ -57,31 +57,31 @@ SECRET_KEY = 'django-insecure-oz_z@if#ikfth92ruuhp^-(jasj*qn@3dt=9ruk1z9bk^hi-o(
 
 Almost there, now only run the following command to set up a SQLite in our local environment to have our program up-and-running 
 
-    $(venv) C:\Users\MASTER\owlish>python manage.py migrate
+     (venv) C:\Users\MASTER\owlish>python manage.py migrate
 
 
 ## How to use it
 
 Now that we are all set up, we are going to get all the customers from the csv file in the directory straight to our database, adding latitude and longitude from google maps API with a single command:
 
-    $(venv) C:\Users\MASTER\owlish>python manage.py add_customers
+     (venv) C:\Users\MASTER\owlish>python manage.py add_customers
 
 This might take a few minutes since they are many, if the user is created it will show 
 
-    $Customer succesfully created
+     Customer succesfully created
     
 Otherways, if the customer is in our database already, it will not create it again and will show the message    
     
-    $Customer was already created
+     Customer was already created
 
 So, now that our database its populated we can run the server with the command:
 
-    $(venv) C:\Users\MASTER\owlish>python manage.py runserver
+     (venv) C:\Users\MASTER\owlish>python manage.py runserver
     
 we will get:
 
 
-    $Watching for file changes with StatReloader
+    Watching for file changes with StatReloader
     Performing system checks...
 
     System check identified no issues (0 silenced).
@@ -102,7 +102,7 @@ Clicking in any name we can have that customer details, or alternatively going t
 
 To run the automated tests, simple type in the command:
 
-(venv) C:\Users\MASTER\owlish>python manage.py test
+     (venv) C:\Users\MASTER\owlish>python manage.py test
 
 This will test automatically the URL's HTTP responses status codes and if the views that django returns are the correct views for the requested url's.
 
