@@ -1,8 +1,8 @@
 # Oowlish Django Challenge
 
-The challenge consist on creating a simple REST API that provides information about customers, design and create the proper databases models, develope a single comand to populate the database from a given csv file and get coordinates for the cities of each customer with Google maps API.
+The challenge consists of creating a simple REST API that provides information about customers, design and create the proper database models, develop a single command to populate the database from a given csv file and get coordinates for the cities of each customer with Google maps API.
 
-## Requierments
+## Requirements
 
 The project runs on Python 3.7.3 and uses the following packages
 
@@ -19,15 +19,16 @@ There is a requierments.txt file on the repository so following the instructions
 
 ## Get the app up and running
 
-Assuming you have python and pip already installed in your local machine we are going to create a virtual enviornment to run the project, so first open the Command Prompt.
+Assuming you have python and pip already installed in your local machine we are going to create a virtual environment to run the project, so first open the Command Prompt.
 
-If you don't have virtual enviorement already installed then run 
+If you don't have virtual environment already installed then run 
 
     $ C:\Users\MASTER>pip install virtualenv
-    
-If you don't have Git installed go to https://git-scm.com/downloads it's very easy intallation    
+ 
+ 
+If you don't have Git installed go to https://git-scm.com/downloads it's very easy installation   
 
-Now you need to clone the git repository to your local machine with the following command and git repository link
+Now you need to clone the git repository to your local machine with the following command and git repository link (If you don't have Git installed go to https://git-scm.com/downloads it's very easy installation)
 
     $C:\Users\MASTER>git clone https://github.com/pepelisto/owlish.git 
 
@@ -35,20 +36,20 @@ Now that we had a new directory atomatically created with the name of the projec
 
     $ C:\Users\MASTER>cd owlish
 
-Now that we are in the project directory we create a virtual enviornment for it with the following command
+Now that we are in the project directory we create a virtual environment  for it with the following command
 
     $ C:\Users\MASTER\owlish>virtualenv venv
 
-So the virtual enviorment its created, now we activate it with:
+So the virtual environment  its created, now we activate it with:
 
     $ C:\Users\MASTER\owlish>venv\Scripts\activate
 
-You can see it worked because of the "(venv)" ate the begining of the line.
-So now that the repository its in your local virtual enviornment, you need to install the requirements in order to properly run the program with the following command
+You can see it worked because of the "(venv)" ate the beginning  of the line.
+So now that the repository its in your local virtual environment, you need to install the requirements in order to properly run the program with the following command
 
     $(venv) C:\Users\MASTER\owlish>pip install -r requirements.txt
 
-Ok, so now, a very important step in the project directory we need to create a .env file (with no extension), windows does not allow you to create files with no extensions but you can do this in an IDE, in Pycharm right click on the project folder, new file and set its name to .env, this might be a bit tricky but very important because here we will set al the sensitive variables related to the project taht we dont want no body to have access to, like Secret Key, database access codes and in this case Google Geocoding API KEY. like shown in the image bellow
+Ok, so now, a very important step in the project directory we need to create a .env file (with no extension), windows does not allow you to create files with no extensions but you can do this in an IDE, in Pycharm right click on the project folder, new file and set its name to .env, this might be a bit tricky but very important because here we will set al the sensitive variables related to the project that we don't want nobody to have access to, like Secret Key, database access codes and in this case Google Geocoding API KEY. like shown in the image below
 
 ![image](https://user-images.githubusercontent.com/54082379/120118144-7a257700-c167-11eb-9bb1-a3cc39d1514f.png)
 
@@ -57,7 +58,7 @@ In there you can set the variables:
 API_KEY = Here you use your own Google Geocode API KEY
 SECRET_KEY = 'django-insecure-oz_z@if#ikfth92ruuhp^-(jasj*qn@3dt=9ruk1z9bk^hi-o('
 
-Almost there, now only run the following commmand to set up a SQLite in our local environment to have our program up-and-running 
+Almost there, now only run the following command to set up a SQLite in our local environment to have our program up-and-running 
 
     $(venv) C:\Users\MASTER\owlish>python manage.py migrate
 
@@ -72,11 +73,11 @@ This might take a few minutes since they are many, if the user is created it wil
 
     $Customer succesfully created
     
-Otherways, if the customer is in our database already, it wil not create it again and will show the message    
+Otherways, if the customer is in our database already, it will not create it again and will show the message    
     
     $Customer was already created
 
-So, now that our database its populated we can run the server with the comand:
+So, now that our database its populated we can run the server with the command:
 
     $(venv) C:\Users\MASTER\owlish>python manage.py runserver
     
@@ -100,7 +101,7 @@ Clicking in any name we can have that customer details, or alternatively going t
 
 ![image](https://user-images.githubusercontent.com/54082379/120118242-e6a07600-c167-11eb-8b61-26f848721d63.png)
 
-## Runing tests
+## Running tests
 
 To run the automated tests, simple type in the command:
 
