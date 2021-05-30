@@ -1,11 +1,23 @@
 # Oowlish Django Challenge
-## Description
 
 The challenge consist on creating a simple REST API that provides information about customers, design and create a database models, develope a single comand to populate the database from a given csv file and get coordinates for the cities of each customer with Google maps API.
 
+## Requierments
 
+The project runs on Python 3.7.3 and uses the following packages
 
-### Get the app up and running
+Django==3.2.3
+googlemaps==4.4.5
+python-decouple==3.4
+pytz==2021.1
+requests==2.25.1
+sqlparse==0.4.1
+typing-extensions==3.10.0.0
+urllib3==1.26.5
+
+There is a requierments.txt file on the repository so following the instructions you will have them installed automatically
+
+## Get the app up and running
 
 Assuming you have python, pip already installed in your local machine we are going to create a virtual enviornment to run the project, so first open the Command Prompt.
 
@@ -50,7 +62,7 @@ Almost there, now only run the following commmand to set up a SQLite in our loca
     $(venv) C:\Users\MASTER\owlish>python manage.py migrate
 
 
-### How to use it
+## How to use it
 
 Now that we are all set up, we are going to get all the customers from the csv file in the directory straight to our database, adding latitude and longitude from google maps API with a single command:
 
@@ -88,7 +100,7 @@ Clicking in any name we can have that customer details, or alternatively going t
 
 ![image](https://user-images.githubusercontent.com/54082379/120118242-e6a07600-c167-11eb-8b61-26f848721d63.png)
 
-### Runing tests
+## Runing tests
 
 To run the automated tests, simple type in the command:
 
