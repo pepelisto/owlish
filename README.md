@@ -17,7 +17,7 @@ urllib3 1.26.5 <br>
 
 There is a requierments.txt file on the repository so following the instructions you will have them installed automatically
 
-## Get the app up and running
+## Get the app up-and-running
 
 Assuming you have python and pip already installed in your local machine we are going to create a virtual environment to run the project, so first open the Command Prompt.
 
