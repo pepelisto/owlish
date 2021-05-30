@@ -33,7 +33,8 @@ class Command(BaseCommand):
 
         def create_customer(self):
             """
-            Trigers the creation of all the objects related to a given customer
+            Triggers the creation of all the objects
+            related to a given customer
             """
             s = self.kwargs.get
             self.get_or_create_model_object(Title, title_name=s("title"))
@@ -50,7 +51,7 @@ class Command(BaseCommand):
             """
             Check if the given object related to the customer exist and if
             it doesnt than its created, also returns de ids of the objects
-            related to the custome (ex: title, city, etc)
+            related to the customer (ex: title, city, etc)
             """
             model = model
             object, object_created = model.objects.get_or_create(**kwargs)
