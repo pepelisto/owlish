@@ -1,21 +1,24 @@
 
 
-First we need to create a virtual enviroment in our local machine, to do so open your Command Promt.
-You will need to have python installed, you can check that typing:
+Assuming you have python and pip already installed in your local machine we are going to create a virtual enviornment to run the project, so firt open the Command Prompt.
+
+If you don't have virtual enviorement already installed then run 
+
+    $ C:\Users\MASTER>pip install virtualenv
+
+Once it's intalled then we are going to create a new directory for the project where we will set the virtual enviornment
+
+    $ C:\Users\MASTER>mkdir owlish
+      C:\Users\MASTER>cd owlish
+
+Now that we are in the project directory we create a virtual enviorment for it with the following command
+
+    $ C:\Users\MASTER\owlish>virtualenv venv
+
+So the virtual enviorment its created now we activate it with:
+
+    $ C:\Users\MASTER\owlish>venv\Scripts\activate
+    
 
 
-    $ python --version
-
-
-The output should be something like this:
-
-    $ python 3.7.3
-
-
-
-
-    $ django-admin.py startproject \
-      --template=https://github.com/nikola-k/django-template/zipball/master \
-      --extension=py,md \
-      <project_name>
 
