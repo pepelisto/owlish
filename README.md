@@ -24,9 +24,6 @@ Assuming you have python and pip already installed in your local machine we are 
 If you don't have virtual environment already installed then run 
 
     $ C:\Users\MASTER>pip install virtualenv
- 
- 
-If you don't have Git installed go to https://git-scm.com/downloads it's very easy installation   
 
 Now you need to clone the git repository to your local machine with the following command and git repository link (If you don't have Git installed go to https://git-scm.com/downloads it's very easy installation)
 
