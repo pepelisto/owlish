@@ -7,13 +7,21 @@ The challenge consist on creating a simple REST API that provides information ab
 The project runs on Python 3.7.3 and uses the following packages
 
 Django==3.2.3
+
 googlemaps==4.4.5
+
 python-decouple==3.4
+
 pytz==2021.1
+
 requests==2.25.1
+
 sqlparse==0.4.1
+
 typing-extensions==3.10.0.0
+
 urllib3==1.26.5
+
 
 There is a requierments.txt file on the repository so following the instructions you will have them installed automatically
 
