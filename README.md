@@ -1,4 +1,5 @@
 
+
 ### Get the app up and running
 
 Assuming you have python, pip already installed in your local machine we are going to create a virtual enviornment to run the project, so first open the Command Prompt.
@@ -44,8 +45,43 @@ Almost there, now only run the following commmand to set up a SQLite in our loca
     $(venv) C:\Users\MASTER\owlish>python manage.py migrate
 
 
+### How to use it
 
+Now that we are all set up, we are going to get all the customers from the csv file in the directory straight to our database, adding latitude and longitude from google maps API with a single command:
 
+    $(venv) C:\Users\MASTER\owlish>python manage.py add_customers
 
+This might take a few minutes since they are many, if the user is created it will show 
 
+    $Customer succesfully created
     
+Otherways, if the customer is in our database already, it wil not create it again and will show the message    
+    
+    $Customer was already created
+
+So, now that our database its populated we can run the server with the comand:
+
+    $(venv) C:\Users\MASTER\owlish>python manage.py runserver
+    
+we will get:
+
+
+    $Watching for file changes with StatReloader
+    Performing system checks...
+
+    System check identified no issues (0 silenced).
+    May 30, 2021 - 16:47:07
+    Django version 3.2.3, using settings 'owlish.settings'
+    Starting development server at http://127.0.0.1:8000/
+    Quit the server with CTRL-BREAK
+
+Now we can go to the url http://127.0.0.1:8000/customers_list/ to get the list with all the customers in our database(see image bellow)
+
+
+     ![image](https://user-images.githubusercontent.com/54082379/120118091-21ee7500-c167-11eb-81b9-8f39786ec03f.png)
+
+
+
+
+
+
