@@ -6,7 +6,7 @@ The challenge consist on creating a simple REST API that provides information ab
 
 The project runs on Python 3.7.3 and uses the following packages
 
-Django 3.2.3
+Django 3.2.3 <br>
 googlemaps 4.4.5
 python-decouple 3.4
 pytz 2021.1
