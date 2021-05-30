@@ -4,6 +4,8 @@ The challenge consists of creating a simple REST API that provides information a
 
 ## Requirements
 
+This instructions on how to get up-and-running and how to use are based on a windows 10 system so it might not work in other operating systems.
+
 The project runs on Python 3.7.3 and uses the following packages
 
 Django 3.2.3 <br>
@@ -15,7 +17,7 @@ sqlparse 0.4.1 <br>
 typing-extensions 3.10.0.0 <br>
 urllib3 1.26.5 <br>
 
-There is a requierments.txt file on the repository so following the instructions you will have them installed automatically
+There is a requierments.txt file on the repository so following the instructions you will have them installed automatically.
 
 ## Get the app up-and-running
 
